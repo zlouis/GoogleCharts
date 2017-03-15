@@ -1,0 +1,24 @@
+{
+  "name": "googlecharts",
+  "version": "1.0.0",
+  "description": "test bench for visualization",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zlouis/GoogleCharts.git"
+  },
+  "author": "Louis Huang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zlouis/GoogleCharts/issues"
+  },
+  "homepage": "https://github.com/zlouis/GoogleCharts#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2"
+  }
+}
