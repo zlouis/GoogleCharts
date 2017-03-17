@@ -41,6 +41,15 @@
         barChart.draw(data, barOptions);
       }
 
+//                 d3js                  //
+//        Reference Guide                //
+// DOM Elements < Data Elements (enter)  //
+// DOm Elements > Data Elements (exit)   //
+// DOM Elements = Data Elements (update) //
+
+
+
+
 //Array to hold the Data
 var dataArray =  [10, 20, 30, 40, 50];
 //Set width of svg
@@ -86,6 +95,24 @@ canvas.append('g')
       .call(axis);
 
 
+
+
+
+var circle = canvas.append("circle")
+            .attr("cx", 250)
+            .attr("yc", 250)
+            .attr("r", 25);
+            
+circle.transition()
+      .each("start", function() { d3.select(this).attr("fill", "orange") })
+      .duration(1500)
+      .delay(1500)
+      .attr("cx", 350)
+      .attr("cy", 200)
+      .transition()
+      .attr("cx", 100)
+      .attr("fill", "red");
+      
 
 
 
