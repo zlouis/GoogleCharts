@@ -28,6 +28,10 @@ viewRouter.get('/chart', function(req, res) {
   res.render('chart');
 });
 
+viewRouter.get('/d3js', function(req, res) {
+  res.render('d3js');
+})
+
 // Queries through database
 connection.query('SELECT * FROM products', function(err, res){
   if(err) throw err;
