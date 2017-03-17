@@ -47,7 +47,9 @@
 // DOm Elements > Data Elements (exit)   //
 // DOM Elements = Data Elements (update) //
 
-
+//sorting arrays//
+dataArray.shift(); // lowest data vlue
+dataArray.sort(d3.descending);
 
 
 //Array to hold the Data
@@ -113,6 +115,7 @@ circle.transition()
       .attr("cx", 100)
       .attr("fill", "red");
       
+
 
 
 
