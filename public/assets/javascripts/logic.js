@@ -41,22 +41,28 @@
         barChart.draw(data, barOptions);
       }
 
+//Array to hold the Data
 var dataArray =  [10, 20, 30, 40, 50];
+//Set width of svg
 var width = 500;
+//Set height of svg
 var height = 500;
 
+//Set width scale to appropriate data size
 var widthScale = d3.scale.linear()
                   .domain([0, 50])
                   .range([0, 500]);
 
+//set color scheme to change from low data values to high data values
 var colorScale = d3.scale.linear()
                   .domain([0, 50])
                   .range(["orange", "teal"]);  
 
+//draw the scale of x axis label with appropriate tick values
 var axis = d3.svg.axis()
             .scale(widthScale)
             .ticks(5);
-
+//set svg properties
 var canvas = d3.select("p")
             .append("svg")
             .attr("width", width)
@@ -64,6 +70,7 @@ var canvas = d3.select("p")
             .append("g")
             .attr("transform", "translate(20, 0)"); // 50 pixels to the right, 50 pixels down x/y axis
 
+//draw bar to according to data points 
 var bars = canvas.selectAll("rect")
           .data(dataArray)
           .enter() //place holders for how many #s in array
@@ -73,12 +80,10 @@ var bars = canvas.selectAll("rect")
             .attr("fill", function(d) { return colorScale(d) })
             .attr("y", function(d, i) { return i * 100 });
 
+//moves the canvas to match x axis values
 canvas.append('g')
       .attr("transform", "translate(0, 450)")
       .call(axis);
-
-
-
 
 
 
