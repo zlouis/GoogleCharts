@@ -102,4 +102,5 @@ var arcs = group.selectAll(".arc")
 
         arcs.append("text")
             .attr("transform", function (d) { return "translate("+ arc.centroid(d) + ")"; })
+            .attr("text-anchor")
             .text(function(d) {return d.data});
