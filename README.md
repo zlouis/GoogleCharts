@@ -9,4 +9,5 @@ This mini project is made with NodeJs.
 
 On the backend, the app uses the Express server for NodeJS as well as MySQL to interact with a database of random data from product items to a range of numbers.
 
+Routes contains their respecting charts, d3js, googlecharts, highcharts.
 Currently a on going project.
