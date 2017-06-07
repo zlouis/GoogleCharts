@@ -11,3 +11,7 @@ On the backend, the app uses the Express server for NodeJS as well as MySQL to i
 
 Routes contains their respecting charts, d3js, googlecharts, highcharts.
 Currently a on going project.
+## To run
+
+1) npm i
+2) node server.js
